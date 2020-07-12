@@ -14,35 +14,35 @@
         @yield('img')
         <menu>
         <div class="logo">
-            <a href="./" class="logo"><img src="./assets/img/logo.png" alt=""></a>
+            <a href="{{url('')}}" class="logo"><img src="{{url('./assets/img/logo.png')}}" alt=""></a>
         </div>
         <div class="menus">
             <div class="menu">
-                <a href="./">Home</a>
+                <a href="{{url('')}}">Home</a>
             </div>
             <div class="menu">
-                <a href="{{'./cardapio'}}">CARDAPIO</a>
+                <a href="{{url('cardapio')}}">CARDAPIO</a>
             </div>
             <div class="menu">
-                <a href="./novidades">NOVIDADES</a>
+                <a href="{{url('novidades')}}">NOVIDADES</a>
             </div>
             <div class="menu">
-                <a href="./receitas">RECEITAS</a>
+                <a href="{{url('receitas')}}">RECEITAS</a>
             </div>
            
             <div class="menu-pedidos">
-                <a href="./pedidos"><i class="fas fa-shopping-bag"></i>PEDIDOS</a>
+                <a href="{{url('carrinho')}}"><i class="fas fa-shopping-bag"></i>PEDIDOS</a>
             </div>
             @if( auth()->check() )
                 <div class="nav-item">
-                    <a class="nav-link font-weight-bold" href="./clientes">Olá {{ auth()->user()->name }}</a>
+                    <a class="nav-link font-weight-bold" href="{{url('menuprofile')}}">Olá {{ auth()->user()->name }}</a>
                 </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="./logout"><i class="fas fa-power-off"></i></a>
+                <div class="nav-logout">
+                    <a class="nav-link" href="{{url('logout')}}"><i class="fas fa-power-off"></i></a>
                 </div>
                 @else
             <div class="menu-login">
-                <a href="./register">LOGIN | CADASTRAR</a>
+                <a href="{{url('register')}}">LOGIN | CADASTRAR</a>
             </div>
                 @endif
         </div>
@@ -63,9 +63,9 @@
                 <div class="ul-menu">
                     <ul class="menus-home">
                         <a href="./"><li class="menu-home">Home</li></a>
-                        <a href="./cardapio"><li class="menu-home">Cardapio</li></a>
-                        <a href="./novidades"><li class="menu-home">Novidades</li></a>
-                        <a href="./receitas"><li class="menu-home">Receitas</li></a>
+                        <a href="{{url('cardapio')}}"><li class="menu-home">Cardapio</li></a>
+                        <a href="{{url('novidades')}}"><li class="menu-home">Novidades</li></a>
+                        <a href="{{url('receitas')}}"><li class="menu-home">Receitas</li></a>
                     </ul>
                 </div>
                 <div class="grupo-footer">
@@ -83,10 +83,10 @@
                         <div class="contato-color">( 11 ) 2266 - 7445</div>
                     </div>
                     <div>
-                        <a class="links" href="./termos">
+                        <a class="links" href="{{url('termos')}}">
                             <div class="font-faq">TERMOS E CONDIÇÕES</div>
                         </a>
-                        <a class="links" href="./duvidas">
+                        <a class="links" href="{{url('duvidas')}}">
                             <div class="font-faq">DÚVIDAS FREQUENTES</div>
                         </a>
                     </div>

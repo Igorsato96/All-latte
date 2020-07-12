@@ -10,11 +10,11 @@
         
          ::-webkit-scrollbar-thumb {
             border-radius: 14px;
-            background: #949393;
+            background: #251a1a;
         }
         
          ::-webkit-scrollbar-track-piece {
-            background: #e8e8e8;
+            background: transparent;
         }
         /* menu */
         
@@ -68,6 +68,10 @@
             border: 2px solid #FFFFFF;
             box-sizing: border-box;
             border-radius: 10px;
+        }
+        
+        .nav-logout {
+            padding-right: 20px
         }
         /* .conteudos {
     position: absolute;
@@ -1373,7 +1377,6 @@ bebidas */
             justify-content: center;
         }
         
-        
         .product-color .active:after {
             content: "";
             width: 22px;
@@ -1459,6 +1462,7 @@ bebidas */
             width: 100%;
             text-transform: uppercase;
             cursor: pointer;
+            border: none;
         }
         
         #saiba-mais {
@@ -1475,7 +1479,7 @@ bebidas */
             justify-content: center;
         }
         
-        .popup{
+        .popup {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1521,7 +1525,7 @@ bebidas */
             width: auto;
         }
         
-        .popup-text{
+        .popup-text {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1549,7 +1553,7 @@ bebidas */
             opacity: 1;
         }
         
-        .popup:target .popup-inner{
+        .popup:target .popup-inner {
             bottom: 0;
             right: 0;
             transform: rotate(0);

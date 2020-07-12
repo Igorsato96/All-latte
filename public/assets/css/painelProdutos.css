@@ -1,0 +1,193 @@
+#logo-prod .fa-box {
+    color: #1A0904;
+    font-size: 27px;
+    margin: 47px 0 22px 85px;
+}
+
+#logo-prod span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 33px;
+    color: #1A0904;
+}
+
+#borda1 {
+    border: 1px solid #28110A;
+}
+
+#total {
+    width: 1350px;
+    height: 246px;
+    background: #28110A;
+    border-radius: 20px;
+    margin-left: 45px;
+}
+
+#conteudo {
+    display: flex;
+    height: 100%;
+    margin: 37px 0px 74px 0px;
+}
+
+#produtos {
+    padding: 21px 100px 35px 66px;
+    border-right: 1px solid #FFFFFF;
+}
+
+#produtos span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.detalhes {
+    display: flex;
+}
+
+.cadastrados {
+    margin: 36px 0px 65px 66px;
+}
+
+.quantidade {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 91px;
+    color: #FFFFFF;
+}
+
+.descricao {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.status {
+    width: 238px;
+    height: 102px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 36px 0 43px 50px;
+    padding: 16px 0 17px 35px;
+    display: flex;
+}
+
+.status .ativo {
+    margin-right: 34px;
+}
+
+.status .qtd {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+
+.status .sts {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+#categorias {
+    padding: 21px 0px 35px 66px;
+}
+
+#categorias span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+#listagem {
+    margin: 74px 18px 0 45px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1A0904;
+}
+
+#listagem span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #1A0904;
+}
+
+#add-produtos {
+    width: 278px;
+    height: 25px;
+    border: 1px solid #28110A;
+    margin: 30px 0 15px 45px;
+}
+
+#add-produtos .fa-plus-square {
+    padding: 4px 12px 9px 14px;
+}
+
+#add-produtos a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1A0904;
+    text-decoration: none;
+}
+
+#tabela-titulo {
+    background: #442A1D;
+    width: 1320px;
+    height: 73px;
+    display: grid;
+    grid-template-columns: 10% 25% 17% 17% 10% 10%;
+    align-items: center;
+    margin: 30px 18px 0 45px;
+    padding-left: 30px;
+}
+
+#tabela-titulo span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#tabela-produtos {
+    background: #FFFFFF;
+    width: 1320px;
+    height: 73px;
+    display: grid;
+    grid-template-columns: 10% 25% 17% 17% 10% 10% 0%;
+    align-items: center;
+    margin: 0 18px 0 45px;
+    padding-left: 30px;
+}
+
+#tabela-produtos p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #28110A;
+}

@@ -62,7 +62,7 @@
         height: 33vh;
     }
     .navegation {
-        top: 29vh;
+        top: 162px;
     }
     .bar {
         width: 4vw;
@@ -300,5 +300,8 @@
     }
     .product-price {
         font-size: 1em;
+    }
+    .navegation {
+        top: 162px;
     }
 }

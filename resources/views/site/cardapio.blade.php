@@ -10,23 +10,12 @@
         <div class="titulo cardapio">Que tal uma pausa?</div>
         <div class="cardapio-sub">Escolha seus favoritos</div>
     <div class="card-cat">
+        @foreach($categories as $category)
         <div class="box">
-            <a href="./salgados"><img src="./assets/img/cardapio/salgados.png"></a>
-            <span>Salgados</span>
+            <a href="{{url('products',$category->id)}}"><img src="{{$category->image}}"></a>
+            <span>{{$category->name}}</span>
         </div>
-        <div class="box">
-           <a href="./bebidas"><img src="./assets/img/cardapio/bebidas.png"></a> 
-            <span>Bebidas</span>
-        </div>
-        <div class="box">
-            <a href="./sobremesas"><img src="./assets/img/cardapio/sobremesas.png"></a>
-            <span>Sobremesas</span>
-        </div>
-        <div class="box">
-            <a href="./nossocafe"><img src="./assets/img/cardapio/nossocafe.png"></a>
-            <span>Nosso café</span>
-        </div>
-    </div>
+        @endforeach
 
     @endsection
     @endsection

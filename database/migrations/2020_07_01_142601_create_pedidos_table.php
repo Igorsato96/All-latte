@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoriasTable extends Migration
+class CreatePedidosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateCategoriasTable extends Migration
      */
     public function up()
     {
-        Schema::create('categorias', function (Blueprint $table) {
+        Schema::create('pedidos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->unique();
-            $table->string('imgbanner');
-            $table->string('image');
+            $table->integer('id_user')->unsigned();
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->enum('status', ['RE', 'PA', 'CA']); // Reservado, Pago, Cancelado
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateCategoriasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categorias');
+        Schema::dropIfExists('pedidos');
     }
 }

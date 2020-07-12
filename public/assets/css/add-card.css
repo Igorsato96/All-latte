@@ -120,18 +120,16 @@
 
 .corpo {
     width: 800px;
-    height: 157px;
+    height: 622px;
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 8px;
-    /* display: flex;
-    align-items: baseline; */
     padding: 30px 19px;
     transition: height 0.5s;
     margin-bottom: 54px;
 }
 
-.corpo .fa-shopping-bag {
+.conteudo .fa-credit-card {
     color: #FFFFFF;
     font-size: 100px;
     margin-left: 27px;
@@ -140,17 +138,19 @@
 .conteudo {
     width: 100%;
     display: flex;
+    align-items: center;
+    margin-bottom: 60px;
 }
 
-.pedidos-conte {
+.card-conte {
     margin: 0 256px 0 27px;
 }
 
-.pedidos-conte span {
+.card-conte span {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 19px;
     line-height: 30px;
     color: #FFFFFF;
 }
@@ -168,127 +168,68 @@
     color: #FFFFFF;
 }
 
-.status {
-    border: 1px solid #ED8C32;
-    box-sizing: border-box;
-    border-radius: 25px;
-    margin-right: 34px;
-    margin-bottom: 36px;
+#form1,
+#form2 {
+    display: flex;
 }
 
-.status span {
-    width: 195px;
-    height: 27px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    color: #ED8C32;
-    padding: 11px 9px 10px 12px;
-    margin-bottom: 50px;
+#form1 {
+    margin-bottom: 44px;
 }
 
-.det span {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 23px;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-.det .fa-chevron-down,
-.det .fa-chevron-up {
-    padding-left: 27px;
-}
-
-.det span:last-child {
-    display: none;
-}
-
-.expandir {
-    height: auto !important;
-    max-height: 800px;
-}
-
-.mais-detalhes {
-    margin-top: 27px;
-    border-top: 1px solid #fff;
-    display: none;
-    opacity: 0;
-    transition: ease-in 0.5s;
-    overflow-y: scroll;
-    height: auto;
-    max-height: 600px;
-}
-
-.prod-det {
-    padding: 0px 5px 0px 37px;
-}
-
-.borda {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 5px;
-    margin: 20px 0 32px 0;
-    border-bottom: 1px solid #ffff;
-}
-
-.borda span {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.itens {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 5px;
-    margin-bottom: 32px;
-}
-
-.itens span {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
-}
-
-.total {
-    width: 272px;
-    height: 62px;
+.form-grup input {
+    width: 350px;
+    height: 50px;
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 8px;
+    background-color: transparent;
+    margin-right: 47px;
+}
+
+.form-grup label {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 61px 532px 27px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
-.total span:first-child {
+#botoes {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 140px;
+}
+
+#cancelar {
+    width: 150px;
+    height: 43px;
+    border: 3px solid #28110A;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 42px;
+    margin-right: 42px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+    color: #28110A;
+}
+
+#salvar {
+    width: 150px;
+    height: 43px;
+    background: #28110A;
+    border-radius: 8px;
+    border: none;
+    margin-right: 40px;
+    cursor: pointer;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 28px;
-    line-height: 34px;
-    color: #FFFFFF;
-}
-
-.total span:last-child {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 15px;
+    line-height: 30px;
     color: #FFFFFF;
 }

@@ -3,40 +3,23 @@
 namespace App\Http\Controllers;
 
 use App\Categorias;
-use App\Produto;
+use App\Produtos;
 use Illuminate\Http\Request;
 
 class ProdutosController extends Controller
 {
-    function getCafe()
+    public function show($id)
     {
-        // $categories= Category::all();
-        $products =  Produto::where('id_category', '=', 1)->get();
-        $categories= Categorias::where('id','=',1)->get();
-        $total = count($products);
-        
-        return view('./site/nossocafe', [
-            'products'=>$products,
-            'total'=>$total,
-            'categories'=>$categories,
-            ]);
+        {
+            $categories = Categorias::where('id',$id)->get();
+            // $category_products = Produtos::where('id_category',$id)->get();
+            $category_products  = Produtos::where([
+                'id_category' => $id,
+                'ativo' => 'S',
+            ])->get();
+            $total = count($category_products);
+            return view ('./site/products',compact('category_products','total','categories'));
+        }
     }
 
-    function getBebidas()
-    {
-        $categories= Categorias::where('id','=',2)->get();
-        $products =  Produto::where('id_category', '=', 2)->get();
-        $total = count($products);
-        
-        return view('./site/bebidas', [
-                'products'=>$products,
-                'total'=>$total,
-                'categories'=>$categories,
-                ]);
-    }
-    public function getProducts() 
-    {
-        $products = Produto::all();
-        return view('./site/bebidas', ["products" => $products]);
-    }
 }

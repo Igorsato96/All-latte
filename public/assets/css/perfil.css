@@ -1,0 +1,191 @@
+.background {
+    background: linear-gradient(180deg, #362922 18.23%, #442A1D 53.65%, rgba(118, 79, 49, 0.96) 99.48%);
+    width: 100%;
+}
+
+#backmenu {
+    background: #1A0904;
+    width: 100%;
+    height: 240px;
+}
+
+#backmenu .logocliente {
+    display: flex;
+    position: relative;
+    top: 51%;
+    margin-left: 126px;
+}
+
+#backmenu .imglogo {
+    width: 214px;
+    height: 206px;
+    background: #28110A;
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imglogo h2 {
+    color: #FFFFFF;
+    font-size: 80px;
+}
+
+#backmenu h1 {
+    position: relative;
+    top: 42px;
+    margin-left: 21px;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+}
+
+#menu-pai {
+    display: flex;
+}
+
+#perfil,
+#pedidos,
+#card,
+#endereco {
+    width: 409px;
+    height: 86px;
+    background: transparent;
+    border-radius: 24px;
+}
+
+#perfil:hover,
+#pedidos:hover,
+#card:hover,
+#endereco:hover {
+    background: #28110A;
+}
+
+#perfil,
+#pedidos,
+#card,
+#endereco {
+    display: flex;
+    align-items: center;
+}
+
+#menus-options {
+    border-right: 3px solid #fff;
+    width: 350px;
+    padding: 136px 84px 0px;
+    margin: 2% 0% 0.5%;
+}
+
+#menus-options a {
+    text-decoration: none;
+}
+
+#perfil .fa-user,
+#pedidos .fa-shopping-bag,
+#card .fa-credit-card,
+#endereco .fa-map-marked-alt {
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: 17px 26px 24px 45px;
+}
+
+#menus-options span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+
+#formu {
+    padding: 67px;
+    overflow: hidden;
+}
+
+#formu h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    margin-bottom: 58px;
+}
+
+#form1,
+#form2 {
+    display: flex;
+}
+
+#form1 {
+    margin-bottom: 44px;
+}
+
+.form-grup input {
+    width: 350px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: transparent;
+    margin-right: 47px;
+    color: #ffff;
+}
+
+.form-grup label {
+    display: flex;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#botoes {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 140px;
+}
+
+#cancelar {
+    width: 150px;
+    height: 43px;
+    border: 3px solid #28110A;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 42px;
+    margin-right: 42px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+    color: #28110A;
+}
+
+#cancelar a {
+    text-decoration: none;
+    color: #28110A;
+}
+
+#salvar {
+    width: 150px;
+    height: 43px;
+    background: #28110A;
+    border-radius: 8px;
+    border: none;
+    margin-right: 40px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFFFFF;
+}

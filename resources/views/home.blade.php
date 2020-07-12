@@ -90,7 +90,7 @@
                             <p>Experimente nossas sobremesas feitas para harmonizar com o sabor dos café e dos chás</p>
                         </div>
                         <div class="btn-pai">
-                            <a href="./sobremesas" class="btn-categoria">Saiba Mais</a>
+                            <a href="{{url('cardapio')}}" class="btn-categoria">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                             <p>Experimente nossas incriveis bebidas e desfrute de uma experiencia unica</p>
                         </div>
                         <div class="btn-pai">
-                            <a href="./bebidas" class="btn-categoria">Saiba Mais</a>
+                            <a href="{{url('cardapio')}}" class="btn-categoria">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                             <p>Deguste os nossos salgados com nossas bebibas</p>
                         </div>
                         <div class="btn-pai">
-                            <a href="./salgados" class="btn-categoria">Saiba Mais</a>
+                            <a href="{{url('cardapio')}}" class="btn-categoria">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                     <div class="conteudos-pqcomecoHo"> Experimente os produtos prontos para consumo, ou se quiser que faça parte do seu dia-a-dia, experimente os grãos e faça o café em sua casa mesmo.
                     </div>
                     <div class="conteudos-pqcomecoHo">Testamos a qualidade para sempre melhor atende-lo.
-                        <a class="links" href="./nossocafe">
+                        <a class="links" href="{{url('cardapio')}}">
                             <div class="conheca"><button class="btnc">CONHEÇA NOSSO CAFÉ</button></div>
                         </a>
                     </div>

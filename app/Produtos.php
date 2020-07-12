@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Produto extends Model
+class Produtos extends Model
 {
-    protected $fillable = ['name','image','prices','qty','description'];
+    protected $fillable = ['name','image','prices','qty','description','id_category','ativo'];
 
     public function categorias()
     {

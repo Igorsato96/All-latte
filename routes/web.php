@@ -14,43 +14,78 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
-Route::get('/', function () {
+
+Route::get('', function () {
     return view('home');
 });
-Route::get('/logout', 'LogoutController@destroy');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('logout', 'LogoutController@logout');
 
-Route::get('/bebidas',  [
-    'uses' => 'ProdutosController@getBebidas',
-    'as' => 'product.index'
-]);
-Route::get('/cardapio', function () {
-    return view('/site/cardapio');
-});
-Route::get('/duvidas', function () {
+Route::get('home', 'HomeController@index')->name('home');
+
+Route::get('cardapio','CardapioController@getCategory',);
+
+Route::get('duvidas', function () {
     return view('/site/duvidas');
 });
-Route::get('/nossocafe',  [
-    'uses' => 'ProdutosController@getCafe',
-    'as' => 'product.index'
-]);
-Route::get('/novidades', function () {
+Route::get('novidades', function () {
     return view('/site/novidades');
 });
-Route::get('/receitas', function () {
+
+Route::get('receitas', function () {
     return view('/site/receitas');
 });
-Route::get('/salgados', function () {
-    return view('/site/salgados');
-});
-Route::get('/sobre-nós', function () {
+
+Route::get('sobre-nós', function () {
     return view('/site/sobre-nós');
 });
-Route::get('/sobremesas', function () {
-    return view('/site/sobremesas');
-});
-Route::get('/termos', function () {
+
+Route::get('termos', function () {
     return view('/site/termos');
 });
-Route::get('/pedidos', 'CarrinhoController@index') -> name('/site/pedidos');
+
+Route::get('menuprofile', function () {
+    return view('/site/menuprofile');
+});
+
+Route::get('perfil', function () {
+    return view('/site/perfil');
+});
+Route::get('pedidos', function () {
+    return view('/site/pedidos');
+});
+Route::get('cartao', function () {
+    return view('/site/cartao');
+});
+Route::get('add-card', function () {
+    return view('/site/add-card');
+});
+
+Route::get('endereco', 'EnderecoController@indexPerfil')->name('endereco');
+
+Route::get('products/{id}', 'ProdutosController@show');
+
+Route::get('perfil', 'PerfilController@index')->name('perfil');
+Route::put('perfil', 'PerfilController@update')->name('perfil.update');
+
+
+Route::resource('add-endereco', 'EnderecoController');
+
+
+
+Route::get('/carrinho', 'CarrinhoController@index')->name('carrinho.index');
+Route::get('/carrinho/adicionar', function() {
+    return redirect()->route('index');
+});
+Route::post('/carrinho/adicionar', 'CarrinhoController@adicionar')->name('carrinho.adicionar');
+Route::delete('/carrinho/remover', 'CarrinhoController@remover')->name('carrinho.remover'); 
+Route::post('/carrinho/concluir', 'CarrinhoController@concluir')->name('carrinho.concluir');
+Route::get('pedidos', 'CarrinhoController@compras')->name('carrinho.compras');
+
+
+
+Route::get('painelprodutos', 'AdminController@ProdutoView')->name('painelprodutos')->middleware('checkAdmin');
+
+Route::resource('add-produtos', 'AdminController')->middleware('checkAdmin');
+
+Route::get('admin', 'AdminController@AdminPainel')->name('admin')->middleware('checkAdmin');

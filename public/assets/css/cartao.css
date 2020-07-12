@@ -124,14 +124,12 @@
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 8px;
-    /* display: flex;
-    align-items: baseline; */
     padding: 30px 19px;
     transition: height 0.5s;
     margin-bottom: 54px;
 }
 
-.corpo .fa-shopping-bag {
+.conteudo .fa-credit-card {
     color: #FFFFFF;
     font-size: 100px;
     margin-left: 27px;
@@ -140,17 +138,18 @@
 .conteudo {
     width: 100%;
     display: flex;
+    align-items: center;
 }
 
-.pedidos-conte {
+.card-conte {
     margin: 0 256px 0 27px;
 }
 
-.pedidos-conte span {
+.card-conte span {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 19px;
     line-height: 30px;
     color: #FFFFFF;
 }
@@ -168,25 +167,8 @@
     color: #FFFFFF;
 }
 
-.status {
-    border: 1px solid #ED8C32;
-    box-sizing: border-box;
-    border-radius: 25px;
-    margin-right: 34px;
-    margin-bottom: 36px;
-}
-
-.status span {
-    width: 195px;
-    height: 27px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    color: #ED8C32;
-    padding: 11px 9px 10px 12px;
-    margin-bottom: 50px;
+.editar .fa-edit {
+    color: #FFFFFF;
 }
 
 .det span {
@@ -213,6 +195,11 @@
     max-height: 800px;
 }
 
+.detalhes {
+    display: flex;
+    margin-left: 187px;
+}
+
 .mais-detalhes {
     margin-top: 27px;
     border-top: 1px solid #fff;
@@ -224,71 +211,20 @@
     max-height: 600px;
 }
 
-.prod-det {
-    padding: 0px 5px 0px 37px;
+.card-det {
+    padding: 35px 5px 0px 37px;
 }
 
-.borda {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.card-det {
     padding-bottom: 5px;
-    margin: 20px 0 32px 0;
-    border-bottom: 1px solid #ffff;
+    margin-bottom: 32px;
 }
 
-.borda span {
+.card-det span {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
-}
-
-.itens {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 5px;
-    margin-bottom: 32px;
-}
-
-.itens span {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
-}
-
-.total {
-    width: 272px;
-    height: 62px;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 61px 532px 27px 30px;
-}
-
-.total span:first-child {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 34px;
-    color: #FFFFFF;
-}
-
-.total span:last-child {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 32px;
     color: #FFFFFF;
 }
