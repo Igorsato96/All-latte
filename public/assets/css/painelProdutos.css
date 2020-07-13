@@ -1,7 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400');
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 14px;
+    background: #251a1a;
+}
+
+ ::-webkit-scrollbar-track-piece {
+    background: #e0d3c9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.area {
+    display: flex;
+}
+
+.area nav {
+    width: 40px;
+    height: 100vh;
+    position: fixed;
+    background-color: #251a1a;
+    padding: 5px;
+}
+
+.area nav i {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding: 10px 3px;
+}
+
+#menu-admin {
+    display: grid;
+    grid-template-rows: 8% 90% 5%;
+    height: 95vh;
+}
+
+#logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.conteudo-pai {
+    height: 100vh;
+    width: 97vw;
+    margin: 0px 24px;
+}
+
+#logo-prod {
+    margin: 28px 0 28px 35px;
+}
+
 #logo-prod .fa-box {
-    color: #1A0904;
-    font-size: 27px;
-    margin: 47px 0 22px 85px;
+    color: #28110A;
+    font-size: 30px;
+    margin-right: 14px;
 }
 
 #logo-prod span {
@@ -14,7 +73,8 @@
 }
 
 #borda1 {
-    border: 1px solid #28110A;
+    border-bottom: 1px solid #28110A;
+    margin-bottom: 58px;
 }
 
 #total {
@@ -34,6 +94,7 @@
 #produtos {
     padding: 21px 100px 35px 66px;
     border-right: 1px solid #FFFFFF;
+    width: 54%;
 }
 
 #produtos span {
@@ -133,10 +194,11 @@
 }
 
 #add-produtos {
-    width: 278px;
+    width: 300px;
     height: 25px;
     border: 1px solid #28110A;
     margin: 30px 0 15px 45px;
+    border-radius: 5px;
 }
 
 #add-produtos .fa-plus-square {
@@ -190,4 +252,30 @@
     font-size: 20px;
     line-height: 24px;
     color: #28110A;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cardapio {
+    background: #351503;
+    border-radius: 5px;
+    margin: 30px 0 15px 45px;
+    width: 300px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cardapio a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
 }

@@ -41,4 +41,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\endereco','id_user');
     }
+
+    public function pedidos()
+    {
+        return $this->hasMany('App\Pedidos','id_user');
+    }
 }

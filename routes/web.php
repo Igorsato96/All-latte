@@ -84,8 +84,11 @@ Route::get('pedidos', 'CarrinhoController@compras')->name('carrinho.compras');
 
 
 
+Route::get('admin', 'AdminController@AdminPainel')->name('admin')->middleware('checkAdmin');
+
+Route::get('painelpedidos', 'AdminController@AdminPedidos')->name('painelpedidos')->middleware('checkAdmin');
+
 Route::get('painelprodutos', 'AdminController@ProdutoView')->name('painelprodutos')->middleware('checkAdmin');
 
 Route::resource('add-produtos', 'AdminController')->middleware('checkAdmin');
 
-Route::get('admin', 'AdminController@AdminPainel')->name('admin')->middleware('checkAdmin');

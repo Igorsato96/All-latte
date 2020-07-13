@@ -33,7 +33,14 @@
             <div class="menu-pedidos">
                 <a href="{{url('carrinho')}}"><i class="fas fa-shopping-bag"></i>PEDIDOS</a>
             </div>
-            @if( auth()->check() )
+            @if( auth()->check() &&  auth()->user()->id == 1 )
+                <div class="nav-item">
+                    <a class="nav-link font-weight-bold" href="{{url('admin')}}">Olá {{ auth()->user()->name }}</a>
+                </div>
+                <div class="nav-logout">
+                    <a class="nav-link" href="{{url('logout')}}"><i class="fas fa-power-off"></i></a>
+                </div>
+                @elseif( auth()->check() )
                 <div class="nav-item">
                     <a class="nav-link font-weight-bold" href="{{url('menuprofile')}}">Olá {{ auth()->user()->name }}</a>
                 </div>
@@ -43,7 +50,7 @@
                 @else
             <div class="menu-login">
                 <a href="{{url('register')}}">LOGIN | CADASTRAR</a>
-            </div>
+            </div>  
                 @endif
         </div>
         </menu>

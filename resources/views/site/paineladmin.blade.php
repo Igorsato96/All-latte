@@ -21,7 +21,7 @@
                 <h1>Por onde vamos começar?</h1>
                 <div id="menu">   
                     <div id="produtos"><a href="{{url('painelprodutos')}}"><i class="fas fa-box"></i><span>PRODUTOS</span></a></div>
-                    <div id="pedidos"><i class="fas fa-shopping-bag"></i><span>PEDIDOS</span></div>
+                    <div id="pedidos"><a href="{{url('painelpedidos')}}"><i class="fas fa-shopping-bag"></i><span>PEDIDOS</span></a></div>
                     <div id="novidades"><i class="far fa-newspaper"></i><span>NOVIDADES</span></div>
                 </div>
             </div>

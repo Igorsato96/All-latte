@@ -52,7 +52,6 @@
                     <span class="preco-total">R$ {{ number_format($total_produto, 2, ',', '.') }} </span>
                 </div>
                 @endforeach
-           
             </div>
             <div id="itens-total">
                 <div id="total">

@@ -139,19 +139,38 @@ class AdminController extends Controller
 
     public function AdminPainel()
     {
-       $pedidos = Pedidos::where([
-        'status' => 'PA'&&'CA',
-    ])->get();
+       $pedidos = Pedidos::whereDate('created_at', '>=',now()->subDays(30))->get();
        $totalpedidos = count($pedidos);
+
        $pagos = Pedidos::where('status','PA')->get();
        $totalpagos= count($pagos);
+
        $reservados = Pedidos::where('status','RE')->get();
        $totalreservados = count($reservados);
+
        $cancelados = Pedidos::where('status','CA')->get();
        $totalcancelados= count($cancelados);
-       $itens = PedidoProdutos::where('status','PA')->get();
+       $itens =  PedidoProdutos::whereDate('created_at', '>=',now()->subDays(30))->get();
        $totalitens= count($itens);
         return view('.site/paineladmin',compact('totalpedidos','totalpagos','totalreservados','totalcancelados','totalitens'));
       
+    }
+
+    public function AdminPedidos()
+    {
+        $pedidos = Pedidos::where('status','PA')->get();
+
+        $pedidohoje = Pedidos::whereDate('created_at','>=',now())->get();
+        $totalpedidoshoje = count($pedidohoje);
+
+        $produtoshoje = PedidoProdutos::whereDate('created_at','>=',now())->get();
+        $totalprodutoshoje = count($produtoshoje);
+
+        $pedidosmes = Pedidos::whereDate('created_at', '>=',now()->subDays(30))->get();
+        $totalpedidosmes = count($pedidosmes);
+
+        $produtosmes = PedidoProdutos::whereDate('created_at', '>=',now()->subDays(30))->get();
+        $totalprodutosmes = count($produtosmes);
+        return view('.site/painelpedidos',compact('pedidos','totalpedidoshoje','totalpedidosmes','totalprodutoshoje','totalprodutosmes'));
     }
 }

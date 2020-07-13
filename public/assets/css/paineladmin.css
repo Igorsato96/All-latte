@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400');
 body {
-    background: #341E12;
+    background: linear-gradient(180deg, #351b0d 0%, #3c3029 100%), #40200a;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #logo {
@@ -91,6 +94,15 @@ body {
     display: flex;
 }
 
+#menu>div {
+    transition: all 0.5s;
+}
+
+#menu>div:hover {
+    width: 217px !important;
+    6 height: 227px !important;
+}
+
 #opcoes #produtos,
 #pedidos,
 #novidades {
@@ -115,7 +127,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 58px;
-    margin: 69px 78px 35px 64px;
+    margin: 30% 34% 14%;
 }
 
 #produtos span,
@@ -257,7 +269,7 @@ body {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 17px;
     color: #FFFFFF;
 }

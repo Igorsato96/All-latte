@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400');
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 14px;
+    background: #251a1a;
+}
+
+ ::-webkit-scrollbar-track-piece {
+    background: #e0d3c9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.area {
+    display: flex;
+}
+
+.area nav {
+    width: 40px;
+    height: 100vh;
+    position: fixed;
+    background-color: #251a1a;
+    padding: 5px;
+}
+
+.area nav i {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding: 10px 3px;
+}
+
+#menu-admin {
+    display: grid;
+    grid-template-rows: 8% 90% 5%;
+    height: 95vh;
+}
+
+#logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.conteudo-pai {
+    height: 100vh;
+    width: 97vw;
+    margin: 0px 40px;
+}
+
+#detalhes span {
+    height: 50px;
+}
+
+#logo-pedido {
+    margin: 28px 0 28px 35px;
+}
+
+#logo-pedido .fa-shopping-bag {
+    color: #28110A;
+    font-size: 30px;
+    margin-right: 14px;
+}
+
+#logo-pedido span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 33px;
+    color: #1A0904;
+}
+
+#borda {
+    border-bottom: 1px solid #28110A;
+    margin-bottom: 58px;
+}
+
+#conteudo {
+    display: flex;
+}
+
+#titulo-back {
+    background: #442A1D;
+    width: 1050px;
+    height: 73px;
+    margin: 0 16px 0 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#tabela {
+    overflow-y: scroll;
+}
+
+#titulo {
+    height: 100%;
+}
+
+#titulo,
+#tabela-detalhes {
+    display: grid;
+    grid-template-columns: 20% 20% 18% 18% 18% 6%;
+    align-items: center;
+    margin: 0 0 50px 20px;
+}
+
+#titulo span,
+#tabela-detalhes span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#tabela-detalhes span {
+    color: #28110A;
+}
+
+#detalhes {
+    width: 301px;
+    height: 638px;
+    background: #28110A;
+    border-radius: 20px;
+}
+
+#total {
+    margin: 50px 0 38px 36px;
+}
+
+#total span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+.pedidos-hoje span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin: 0 0 0 42px;
+}
+
+.pedidos,
+.itens {
+    margin: 0 0 0 68px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pedidos .total-produtos,
+.itens .total-produtos {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 67px;
+    color: #FFFFFF;
+}
+
+.pedidos .pedi,
+.itens .pedi {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.pedidos-hoje {
+    margin-top: 40px;
+}
+
+.fa-times-circle {
+    font-size: 30px;
+    color: #c72121;
+}

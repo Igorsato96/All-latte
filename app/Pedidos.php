@@ -23,4 +23,9 @@ class Pedidos extends Model
         return !empty($pedido->id)? $pedido->id:null;
     }
 
+    public function user()
+    {
+        return $this->hasMany('App\User','id','id_user');
+    }
+
 }

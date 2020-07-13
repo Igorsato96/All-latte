@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400');
 .flex {
     display: flex;
 }
@@ -247,7 +248,7 @@
 }
 
 .cep {
-    margin-right: 135px;
+    margin-right: 123px;
 }
 
 .complemento {
