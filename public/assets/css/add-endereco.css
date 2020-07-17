@@ -405,4 +405,38 @@
     .form-grup input {
         margin: 23px 0 7px 0;
     }
+    #menus-options {
+        border-right: none;
+    }
+    .conteudo .fa-map-marked-alt {
+        font-size: 50px;
+    }
+    .form-grup select {
+        width: 280px;
+    }
+    .cep input,
+    .rua input,
+    .complemento input {
+        width: 280px;
+    }
+    label {
+        margin-top: 30px;
+    }
+    .rua-num {
+        display: block
+    }
+    .novo-end input {
+        width: 230px;
+    }
+    .corpo {
+        width: 365px;
+        height: 925px;
+    }
+    #botoes {
+        justify-content: center;
+        margin-top: 73px;
+    }
+    #list {
+        padding: 30px 2px;
+    }
 }
