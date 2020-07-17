@@ -189,3 +189,9 @@ body {
     font-size: 30px;
     color: #c72121;
 }
+
+@media (min-width: 1024px)and (max-width:1920px) {
+    #titulo-back {
+        width: 1515px;
+    }
+}

@@ -9,42 +9,63 @@
     <script src="https://kit.fontawesome.com/06746c852c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        @yield('background')
+    @yield('background')
     <header>
         @yield('img')
-        <menu>
-        <div class="logo">
-            <a href="{{url('')}}" class="logo"><img src="{{url('./assets/img/logo.png')}}" alt=""></a>
+        <div id="navbar">
+            <button><i class="fas fa-bars"></i></button>
         </div>
-        <div class="menus">
-            <div class="menu">
-                <a href="{{url('')}}">Home</a>
+        <nav>
+            <a id="fechar"><i class="fas fa-bars"></i></a>
+            <ul>
+                <li><a href="{{url('')}}">Home</a></li>
+                <li><a href="{{url('cardapio')}}">Cardápio</a></li>
+                <li><a href="{{url('novidades')}}">Novidades</a></li>
+                <li><a href="{{url('receitas')}}">Receitas</a></li>
+                <li><a href="{{url('carrinho')}}">Pedidos</a></li> 
+                @if( auth()->check() &&  auth()->user()->id == 1 )
+                <li><a href="{{url('admin')}}">Olá {{ auth()->user()->name }}</a></li>
+                <li><a href="{{url('logout')}}"><i class="fas fa-power-off"></i></a></li>
+                @elseif( auth()->check() )
+                <li><a href="{{url('menuprofile')}}">Olá {{ auth()->user()->name }}</a></li>
+                <li><a href="{{url('logout')}}"><i class="fas fa-power-off"></i></a></li>
+                @else
+                <li><a href="{{url('register')}}">Login\Cadastrar</a></li>
+                @endif
+            </ul>
+        </nav>
+        <menu>
+            <div class="logo">
+                <a href="{{url('')}}" class="logo"><img src="{{url('./assets/img/logo.png')}}" alt=""></a>
             </div>
-            <div class="menu">
-                <a href="{{url('cardapio')}}">CARDAPIO</a>
-            </div>
-            <div class="menu">
-                <a href="{{url('novidades')}}">NOVIDADES</a>
-            </div>
-            <div class="menu">
-                <a href="{{url('receitas')}}">RECEITAS</a>
-            </div>
-           
+            <div class="menus">
+                <div class="menu">
+                    <a href="{{url('')}}">Home</a>
+                </div>
+                <div class="menu">
+                    <a href="{{url('cardapio')}}">CARDAPIO</a>
+                </div>
+                <div class="menu">
+                    <a href="{{url('novidades')}}">NOVIDADES</a>
+                </div>
+                <div class="menu">
+                    <a href="{{url('receitas')}}">RECEITAS</a>
+                </div>
             <div class="menu-pedidos">
                 <a href="{{url('carrinho')}}"><i class="fas fa-shopping-bag"></i>PEDIDOS</a>
             </div>
             @if( auth()->check() &&  auth()->user()->id == 1 )
-                <div class="nav-item">
-                    <a class="nav-link font-weight-bold" href="{{url('admin')}}">Olá {{ auth()->user()->name }}</a>
+                <div class="menu-item">
+                    <a href="{{url('admin')}}">Olá {{ auth()->user()->name }}</a>
                 </div>
-                <div class="nav-logout">
+                <div class="menu-logout">
                     <a class="nav-link" href="{{url('logout')}}"><i class="fas fa-power-off"></i></a>
                 </div>
                 @elseif( auth()->check() )
-                <div class="nav-item">
-                    <a class="nav-link font-weight-bold" href="{{url('menuprofile')}}">Olá {{ auth()->user()->name }}</a>
+                <div class="menu-item">
+                    <a href="{{url('menuprofile')}}">Olá {{ auth()->user()->name }}</a>
                 </div>
-                <div class="nav-logout">
+                <div class="menu-logout">
                     <a class="nav-link" href="{{url('logout')}}"><i class="fas fa-power-off"></i></a>
                 </div>
                 @else
@@ -62,6 +83,7 @@
         <div class="footer-pai">
             <div class="chevron"><i class="fas fa-chevron-up"></i></div>
         </div>
+    <div id="footer-normal">
         <div class="menus-footer">
             <div class="menus-menu">
                 <div class="menu-center">
@@ -106,6 +128,45 @@
                 </div>
             </div>
         </div>
+        </div> 
+        <div id="footer-responsivo">
+            <div id="responsivo-menus">
+                <span>MENU</span>
+                <a href="">HOME</a>
+                <a href="">CARDAPIO</a>
+                <a href="">NOVIDADES</a>
+                <a href="">RECEITAS</a>
+            </div>
+            <div id="responsivo-termos">
+                <a href="">TERMOS E CONDIÇÕES</a>
+                <a href="">DÚVIDAS FREQUENTES</a>
+            </div>
+            <div id="responsivo-contatos">
+                <span>CONTATO</span>
+                <span>( 11 ) 2266 - 7445</span>
+                <span>NOS SIGA</span>
+            </div>
+            <div id="responsivo-redes">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div id="responsivo-criador">
+                <span>Powered</span>
+                <span>BY MASSAHIKO</span>
+            </div>
+        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $("nav").hide();
+        $("#navbar").click(function(){
+            $("nav").show();
+        });
+        $("#fechar").click(function(){
+            $("nav").hide();
+        });
+    </script>
     </body>
 </html>

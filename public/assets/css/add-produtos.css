@@ -160,6 +160,7 @@ textarea {
     color: #FFFFFF;
     border: none;
     margin-right: 16px;
+    cursor: pointer;
 }
 
 #cancelar button {
@@ -174,4 +175,30 @@ textarea {
     font-size: 18px;
     line-height: 22px;
     color: #442A1D;
+}
+
+#cancelar a {
+    text-decoration: none;
+    color: #442A1D;
+}
+
+.alerta span {
+    color: red;
+    font-family: Montserrat;
+}
+
+@media (min-width: 1024px)and (max-width:1920px) {
+    #nome,
+    #categoria,
+    #quantidade,
+    #preco,
+    #status {
+        margin: 122px 130px 0 0;
+    }
+    textarea {
+        width: 1220px;
+    }
+    #botoes {
+        margin: 132px 0 125px 1354px;
+    }
 }

@@ -78,7 +78,6 @@ body {
 }
 
 #total {
-    width: 1350px;
     height: 246px;
     background: #28110A;
     border-radius: 20px;
@@ -216,7 +215,6 @@ body {
 
 #tabela-titulo {
     background: #442A1D;
-    width: 1320px;
     height: 73px;
     display: grid;
     grid-template-columns: 10% 25% 17% 17% 10% 10%;
@@ -236,7 +234,6 @@ body {
 
 #tabela-produtos {
     background: #FFFFFF;
-    width: 1320px;
     height: 73px;
     display: grid;
     grid-template-columns: 10% 25% 17% 17% 10% 10% 0%;

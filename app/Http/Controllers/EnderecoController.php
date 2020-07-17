@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Endereco;
+use App\Http\Requests\StoreUpdateEnderecoRequest;
 use Illuminate\Support\Facades\Auth;
 
 class EnderecoController extends Controller
@@ -41,10 +42,10 @@ class EnderecoController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StoreUpdateEnderecoRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreUpdateEnderecoRequest  $request)
     {
         $user = User::findOrFail(Auth::user()->id);
         $user->enderecos()->create([
@@ -87,12 +88,13 @@ class EnderecoController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StoreUpdateEnderecoRequest   $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(StoreUpdateEnderecoRequest $request, $id)
     {
+       
         $this->objEndereco->where(['id'=>$id])->update([
             'name' => $request->name,
             'cep'=> $request->cep,

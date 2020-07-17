@@ -13,6 +13,13 @@
     <span>Produtos</span>
     </div>
     <div id="borda1"></div>
+    @if($errors->any())
+        @foreach($errors->all() as $error)
+            <div class="alerta">
+                <span>{{$error}}</span>
+            </div>
+        @endforeach
+    @endif
     <div id="fundo">
         <div id="adicionar">
             <span>@if(isset($produtos)) Editar Produtos @else Cadastrar Produtos @endif</span>
@@ -72,7 +79,7 @@
                 <button type="submit" value="@if(isset($produtos)) Editar Produtos @else Cadastrar Produtos @endif ">ADICIONAR</button>
             </div>
             <div id="cancelar">
-                <button>CANCELAR</button>
+                <button><a href="{{ url('painelprodutos') }}">CANCELAR</a></button>
             </div>
         </div>
         </form>

@@ -30,6 +30,14 @@
     </div>
     <div id="list">
     <h1>@if(isset($endereco)) Editar Endereços @else Cadastrar Endereços @endif </h1>
+
+    @if($errors->any())
+        @foreach($errors->all() as $error)
+            <div class="alerta">
+                <span>{{$error}}</span>
+            </div>
+        @endforeach
+    @endif
     <div id="grupo-corpo">
         <div class="corpo">
             <div class="conteudo">

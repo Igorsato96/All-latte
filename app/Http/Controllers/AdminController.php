@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Categorias;
+use App\Http\Requests\StoreUpdateProdutosRequest;
 use App\PedidoProdutos;
 use App\Pedidos;
 use App\Produtos;
@@ -44,10 +45,10 @@ class AdminController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\StoreUpdateProdutosRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreUpdateProdutosRequest $request)
     {   
         $data = $request->only('name','prices','qty','description','id_category','ativo');
 
@@ -88,11 +89,11 @@ class AdminController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\StoreUpdateProdutosRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(StoreUpdateProdutosRequest $request, $id)
     {
         if(!$produtos = $this->objProduto->find($id))
             return redirect()->back();
@@ -150,6 +151,7 @@ class AdminController extends Controller
 
        $cancelados = Pedidos::where('status','CA')->get();
        $totalcancelados= count($cancelados);
+       
        $itens =  PedidoProdutos::whereDate('created_at', '>=',now()->subDays(30))->get();
        $totalitens= count($itens);
         return view('.site/paineladmin',compact('totalpedidos','totalpagos','totalreservados','totalcancelados','totalitens'));

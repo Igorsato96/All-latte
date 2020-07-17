@@ -100,7 +100,7 @@ body {
 
 #menu>div:hover {
     width: 217px !important;
-    6 height: 227px !important;
+    height: 227px !important;
 }
 
 #opcoes #produtos,
@@ -272,4 +272,13 @@ body {
     font-size: 12px;
     line-height: 17px;
     color: #FFFFFF;
+}
+
+@media (min-width: 1024px)and (max-width:1920px) {
+    #home {
+        margin: 0 27px 0 1105px;
+    }
+    #opcoes {
+        margin: 0 200px 0 70px;
+    }
 }

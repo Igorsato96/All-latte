@@ -2,7 +2,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{asset('assets/css/estilo.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/login.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/responsivo.css')}}">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Login</title>
     <script src="https://kit.fontawesome.com/06746c852c.js" crossorigin="anonymous"></script>

@@ -326,3 +326,83 @@
 .form-grup select option {
     background-color: #442A1D
 }
+
+.alerta span {
+    color: red;
+    font-family: Montserrat;
+}
+
+@media (max-width: 900px) {
+    #backmenu .imglogo {
+        width: 50px;
+        height: 50px;
+    }
+    .imglogo h2 {
+        font-size: 33px;
+    }
+    #backmenu h1 {
+        margin-left: 9px;
+        color: #FFFFFF;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 37px;
+        font-family: Montserrat;
+        text-transform: uppercase;
+        align-items: center;
+        display: flex;
+    }
+    #menus-options {
+        display: table-cell;
+        padding: 0;
+    }
+    #menus-options span {
+        font-size: 16px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #perfil,
+    #pedidos,
+    #card,
+    #endereco {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 150px;
+        height: 200px;
+    }
+    #menus-options .fa-user,
+    #menus-options .fa-credit-card,
+    #menus-options .fa-map-marked-alt,
+    #menus-options .fa-shopping-bag {
+        font-size: 75px;
+    }
+    #perfil,
+    #pedidos,
+    #card,
+    #endereco {
+        margin: 70px 0px 0px 107px;
+    }
+    span {
+        font-size: 14px;
+    }
+    #menu-pai {
+        display: block;
+    }
+    #formu {
+        padding: 0;
+    }
+    #form1,
+    #form2 {
+        display: inline;
+    }
+    .form-grup label {
+        margin: 19px 0;
+    }
+    .form-grup input {
+        margin: 23px 0 7px 0;
+    }
+}

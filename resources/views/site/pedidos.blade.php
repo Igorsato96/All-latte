@@ -37,10 +37,10 @@
                 <div><i class="fas fa-shopping-bag"></i></div>      
                 <div class="pedidos-conte">
                     <span>Pedido N {{$compra->id}}</span>
-                    <div class="info-card">
+                    <!-- <div class="info-card">
                     <span><i class="far fa-credit-card"></i></span>
                     <span>Final 1253</span>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="detalhes">
                     <div class="status">

@@ -2,7 +2,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{asset('assets/css/estilo.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/login.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/responsivo.css')}}">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Login</title>
     <script src="https://kit.fontawesome.com/06746c852c.js" crossorigin="anonymous"></script>
@@ -47,8 +48,8 @@
                         <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nome">
                     </label>
                     @error('name')
-                        <span class="invalid-feedback" role="alert">
-                             <strong>{{ $message }}</strong>
+                    <span class="alerta">
+                            <strong>{{ $message }}</strong>
                         </span>
                     @enderror
                     <label class="label-input" for="email">
@@ -56,7 +57,7 @@
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Digite seu e-mail">
                     </label>
                     @error('email')
-                        <span class="invalid-feedback" role="alert">
+                        <span class="alerta">
                             <strong>{{ $message }}</strong>
                         </span>
                     @enderror
@@ -69,7 +70,7 @@
                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Senha">
                     </label>
                     @error('password')
-                        <span class="invalid-feedback" role="alert">
+                    <span class="alerta">
                             <strong>{{ $message }}</strong>
                         </span>
                     @enderror
@@ -121,16 +122,16 @@
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus  placeholder="Digite seu e-mail"> 
                     </label>
                     @error('email')
-                         <span class="invalid-feedback" role="alert">
+                    <span class="alerta">
                             <strong>{{ $message }}</strong>
-                         </span>
+                        </span>
                     @enderror
                     <label class="label-input" for="password">
                         <i class="fas fa-lock icon-modify"></i>
                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Senha">
                     </label>
                     @error('password')
-                         <span class="invalid-feedback" role="alert">
+                    <span class="alerta">
                             <strong>{{ $message }}</strong>
                         </span>
                      @enderror

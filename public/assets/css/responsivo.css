@@ -1,308 +1,450 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400');
-@media (max-width: 900px) {
-    menu {
-        display: none;
-    }
-    .slidershow {
-        height: 33vh;
-    }
-    /* bem vindo */
-    .bem {
-        position: absolute;
-        top: 70%;
-        font-size: 1em;
-    }
-    .bem-vindo {
-        font-size: 1em;
-        line-height: 38px;
-    }
-    .al-latte {
-        font-size: 1em;
-    }
-    .al-latte span {
-        font-size: 1em;
-    }
-    .historia-filho {
-        display: grid;
-    }
-    .conteudo-index {
-        font-size: 1.1em;
-    }
-    .btnl {
-        font-size: 0.8em;
-    }
-    .historia-filho.index {
-        padding: 1em;
-    }
-    .titulo {
-        font-size: 1.8em;
-        display: grid;
-    }
-    .conteudo-pqcomeco {
-        display: table-cell;
-        justify-content: center;
-    }
-    .sub-titulo-sec {
-        font-size: 1.8em;
-    }
-    .titulo-sub {
-        width: 100%;
-    }
-    .imagem-pqcomeco {
-        display: flex;
-        justify-content: center;
-    }
-    .imagem-pqcomeco img {
-        width: 85%;
-    }
-    /* novidades */
-    .novidades {
-        height: 33vh;
-    }
-    .slide-novidades {
-        height: 33vh;
-    }
-    .navegation {
-        top: 162px;
-    }
-    .bar {
-        width: 4vw;
-        height: 2vh;
-    }
-    /* 
+              @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400');
+              @media (max-width: 900px) {
+                  #footer-normal {
+                      display: none
+                  }
+                  menu {
+                      display: none;
+                  }
+                  .slidershow {
+                      height: 33vh;
+                  }
+                  /* bem vindo */
+                  .bem {
+                      position: absolute;
+                      top: 70%;
+                      font-size: 1em;
+                  }
+                  .bem-vindo {
+                      font-size: 1em;
+                      line-height: 38px;
+                  }
+                  .al-latte {
+                      font-size: 1em;
+                  }
+                  .al-latte span {
+                      font-size: 1em;
+                  }
+                  .historia-filho {
+                      display: grid;
+                  }
+                  .conteudo-index {
+                      font-size: 1.1em;
+                  }
+                  .btnl {
+                      font-size: 0.8em;
+                  }
+                  .historia-filho.index {
+                      padding: 1em;
+                  }
+                  .titulo {
+                      font-size: 1.8em;
+                      display: grid;
+                  }
+                  .conteudo-pqcomeco {
+                      display: table-cell;
+                      justify-content: center;
+                  }
+                  .sub-titulo-sec {
+                      font-size: 1.8em;
+                  }
+                  .titulo-sub {
+                      width: 100%;
+                  }
+                  .imagem-pqcomeco {
+                      display: flex;
+                      justify-content: center;
+                  }
+                  .imagem-pqcomeco img {
+                      width: 85%;
+                  }
+                  /* novidades */
+                  .novidades {
+                      height: 33vh;
+                  }
+                  .slide-novidades {
+                      height: 33vh;
+                  }
+                  .navegation {
+                      top: 162px;
+                  }
+                  .bar {
+                      width: 4vw;
+                      height: 2vh;
+                  }
+                  /* 
         supreenda-se */
-    .psub-titulo {
-        font-size: 1em;
-    }
-    .sub-titulo {
-        font-size: 1em;
-        text-align: center;
-    }
-    .categoria-pai {
-        width: 100%;
-    }
-    .categorias {
-        display: grid;
-        width: 100%;
-    }
-    .cartao {
-        width: 36vh;
-        height: 26vh;
-        margin-bottom: 1vh;
-    }
-    .cartao .info p {
-        font-size: 0.8em;
-    }
-    .btn-categoria {
-        font-size: 1em;
-    }
-    /* receitas */
-    .titulo-receita {
-        font-size: 55px;
-    }
-    .conte-receita {
-        font-size: 24px;
-    }
-    .receita-img {
-        height: 38%;
-    }
-    /* explore */
-    .titulo-home {
-        font-size: 2em;
-    }
-    .conteudos-pqcomecoHo {
-        font-size: 0.9em;
-        text-align: center;
-    }
-    .explore-filho {
-        display: block;
-    }
-    .titulo-sub-explore {
-        width: 100%;
-    }
-    .btnc {
-        font-size: 0.7em;
-    }
-    .titulo-principal {
-        font-size: 85px;
-    }
-    .imagem-explore img {
-        width: 100%;
-    }
-    /* termo */
-    .titulo-principal {
-        font-size: 2em;
-    }
-    .termos {
-        font-size: 0.8em;
-    }
-    .sub-tduvidas {
-        font-size: 0.8em;
-    }
-    .sub--tduvidas {
-        font-size: 0.7em;
-    }
-    .titulo-bebidas {
-        font-size: 2em;
-    }
-    #adicionar {
-        font-size: 0.8em;
-        height: 4vh;
-    }
-    #saiba-mais {
-        height: 30px;
-        font-size: 0.7em;
-    }
-    .product-price {
-        font-size: 1.5em;
-    }
-    .product-cardp {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .product-card {
-        width: 47vw;
-        height: 42vh;
-    }
-    .text-random,
-    .text-random1,
-    .text-random2 {
-        font-size: 1em;
-    }
-    .product-pic {
-        height: 16vh;
-    }
-    .product-pic img {
-        height: 18vh;
-    }
-    .product-pic-milkshake,
-    .product-pic-cha {
-        height: 16vh;
-    }
-    .quantidade {
-        font-size: 0.8em;
-    }
-    .dropbtn {
-        width: 152px;
-        height: 37px;
-        font-size: 1em;
-    }
-    .popup-inner {
-        width: 100vw;
-        height: 63vh;
-    }
-    .popup-photo {
-        width: 100%;
-    }
-    .popup-photo img {
-        width: 44vw;
-    }
-    .popup-text h1 {
-        font-size: 2em;
-    }
-    .popup-text p {
-        font-size: 0.8em;
-    }
-    .botao {
-        width: 70%;
-    }
-    .nossa-historia {
-        font-size: 3em;
-    }
-    .titulo-nossahistoria {
-        font-size: 1.2em;
-    }
-    .conteudo-pqcomecoH {
-        font-size: 1em;
-        text-align: justify;
-    }
-    .titulo-sub .secundario {
-        font-size: 0.8em;
-    }
-}
-
-@media (min-width: 900px)and (max-width:1300px) {
-    .menus a {
-        font-size: 0.8em;
-    }
-    .slidershow {
-        height: 50vh;
-    }
-    .historia-filho {
-        display: grid;
-    }
-    .conteudo-index {
-        font-size: 1.1em;
-    }
-    .btnl {
-        font-size: 0.8em;
-    }
-    .historia-filho.index {
-        padding: 1em;
-    }
-    .titulo {
-        font-size: 1.8em;
-    }
-    .conteudo-pqcomeco {
-        display: flex;
-        justify-content: center;
-    }
-    .sub-titulo-sec {
-        font-size: 1.8em;
-    }
-    .titulo-sub {
-        width: 100%;
-    }
-    .imagem-pqcomeco img {
-        width: 85%;
-    }
-    .novidades {
-        height: 67vh;
-    }
-    .slide-novidade img {
-        width: 100%;
-        height: 100%;
-    }
-    .navegation {
-        top: 61vh;
-    }
-    .bar {
-        width: 2vw;
-        height: 3vh;
-    }
-    .conteudos-pqcomecoHo {
-        font-size: 1em;
-    }
-    .product-cardp {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .conteudo-pqcomeco {
-        display: table-cell;
-    }
-}
-
-@media (max-width: 374px) {
-    .product-pic {
-        height: 13vh;
-    }
-    .product-pic img {
-        height: 13vh;
-    }
-    .product-pic-milkshake,
-    .product-pic-cha {
-        height: 13vh;
-    }
-    #adicionar {
-        font-size: 0.5em;
-        height: 4vh;
-    }
-    #saiba-mais {
-        font-size: 0.5em;
-        height: 3vh;
-    }
-    .product-price {
-        font-size: 1em;
-    }
-    .navegation {
-        top: 162px;
-    }
-}
+                  .psub-titulo {
+                      font-size: 1em;
+                  }
+                  .sub-titulo {
+                      font-size: 1em;
+                      text-align: center;
+                  }
+                  .categoria-pai {
+                      width: 100%;
+                  }
+                  .categorias {
+                      display: grid;
+                      width: 100%;
+                  }
+                  .cartao {
+                      width: 36vh;
+                      height: 26vh;
+                      margin-bottom: 1vh;
+                  }
+                  .cartao .info p {
+                      font-size: 0.8em;
+                  }
+                  .btn-categoria {
+                      font-size: 1em;
+                  }
+                  /* receitas */
+                  .titulo-receita {
+                      font-size: 55px;
+                  }
+                  .conte-receita {
+                      font-size: 24px;
+                  }
+                  .receita-img {
+                      height: 38%;
+                  }
+                  /* explore */
+                  .titulo-home {
+                      font-size: 2em;
+                  }
+                  .conteudos-pqcomecoHo {
+                      font-size: 0.9em;
+                      text-align: center;
+                  }
+                  .explore-filho {
+                      display: block;
+                  }
+                  .titulo-sub-explore {
+                      width: 100%;
+                  }
+                  .btnc {
+                      font-size: 0.7em;
+                  }
+                  .titulo-principal {
+                      font-size: 85px;
+                  }
+                  .imagem-explore img {
+                      width: 100%;
+                  }
+                  /* termo */
+                  .titulo-principal {
+                      font-size: 2em;
+                  }
+                  .termos {
+                      font-size: 0.8em;
+                  }
+                  .sub-tduvidas {
+                      font-size: 0.8em;
+                  }
+                  .sub--tduvidas {
+                      font-size: 0.7em;
+                  }
+                  .titulo-bebidas {
+                      font-size: 2em;
+                  }
+                  #adicionar {
+                      font-size: 0.8em;
+                      height: 4vh;
+                  }
+                  #saiba-mais {
+                      height: 30px;
+                      font-size: 0.7em;
+                  }
+                  .product-price {
+                      font-size: 1.5em;
+                  }
+                  .product-cardp {
+                      grid-template-columns: repeat(2, 1fr);
+                  }
+                  .product-card {
+                      width: 47vw;
+                      height: 42vh;
+                  }
+                  .text-random,
+                  .text-random1,
+                  .text-random2 {
+                      font-size: 1em;
+                  }
+                  .product-pic {
+                      height: 16vh;
+                  }
+                  .product-pic img {
+                      height: 18vh;
+                  }
+                  .product-pic-milkshake,
+                  .product-pic-cha {
+                      height: 16vh;
+                  }
+                  .quantidade {
+                      font-size: 0.8em;
+                  }
+                  .dropbtn {
+                      width: 152px;
+                      height: 37px;
+                      font-size: 1em;
+                  }
+                  .popup-inner {
+                      width: 100vw;
+                      height: 63vh;
+                  }
+                  .popup-photo {
+                      width: 100%;
+                  }
+                  .popup-photo img {
+                      width: 44vw;
+                  }
+                  .popup-text h1 {
+                      font-size: 2em;
+                  }
+                  .popup-text p {
+                      font-size: 0.8em;
+                  }
+                  .botao {
+                      width: 70%;
+                  }
+                  .nossa-historia {
+                      font-size: 3em;
+                  }
+                  .titulo-nossahistoria {
+                      font-size: 1.2em;
+                  }
+                  .conteudo-pqcomecoH {
+                      font-size: 1em;
+                      text-align: justify;
+                  }
+                  .titulo-sub .secundario {
+                      font-size: 0.8em;
+                  }
+                  .cardapio img {
+                      width: 100%;
+                      height: auto;
+                  }
+                  .titulo.cardapio {
+                      font-size: 30px;
+                  }
+                  .cardapio-sub {
+                      font-size: 24px;
+                  }
+                  .card-cat {
+                      display: inline-block;
+                  }
+                  .card-cat .box img {
+                      width: 50%;
+                      height: auto;
+                  }
+                  .product-info {
+                      padding: 16% 0;
+                  }
+                  .product-price {
+                      font-size: 20px;
+                  }
+                  .adicionar {
+                      height: 32px;
+                      font-size: 10px;
+                      margin-bottom: 12px;
+                  }
+                  #saiba-mais {
+                      margin-top: 13px;
+                  }
+                  .text-random,
+                  .text-random1,
+                  .text-random2 {
+                      font-size: 14px;
+                  }
+                  .titulo-receita {
+                      font-size: 30px;
+                  }
+                  .sub-titulo-novi {
+                      font-size: 16px;
+                  }
+                  .conte-novi {
+                      font-size: 13px;
+                  }
+                  .sub-cont-novi {
+                      font-size: 22px;
+                  }
+                  .sub-cont-novi h4 {
+                      font-size: 16px;
+                  }
+                  .novi-banner {
+                      width: auto;
+                      height: auto;
+                      margin-left: 0%;
+                  }
+                  .novi-img img {
+                      width: 330px;
+                      height: auto;
+                  }
+                  .video-card {
+                      width: 47vw;
+                      height: 42vh;
+                  }
+                  .titulo-receita {
+                      font-size: 23px;
+                  }
+                  .conte-receita {
+                      font-size: 14px;
+                  }
+                  .todos-videos {
+                      grid-template-columns: repeat(2, 1fr);
+                  }
+                  .video-card {
+                      width: 179px;
+                      height: auto;
+                      margin: 2%;
+                  }
+                  .video-card .video-content h1 {
+                      font-size: 16px;
+                  }
+                  .video-card .video-content h2 {
+                      font-size: 15px;
+                  }
+                  .video-card .video-content p {
+                      font-size: 9px;
+                  }
+                  .video-card .video-content a {
+                      font-size: 14px;
+                  }
+              }
+              
+              @media (min-width: 900px)and (max-width:1025px) {
+                  nav {
+                      display: none;
+                  }
+                  #navbar {
+                      display: none;
+                  }
+                  #footer-reponsivo {
+                      display: none;
+                  }
+                  .menus a {
+                      font-size: 0.8em;
+                  }
+                  .slidershow {
+                      height: 50vh;
+                  }
+                  .historia-filho {
+                      display: grid;
+                  }
+                  .conteudo-index {
+                      font-size: 1.1em;
+                  }
+                  .btnl {
+                      font-size: 0.8em;
+                  }
+                  .historia-filho.index {
+                      padding: 1em;
+                  }
+                  .titulo {
+                      font-size: 1.8em;
+                  }
+                  .conteudo-pqcomeco {
+                      display: flex;
+                      justify-content: center;
+                  }
+                  .sub-titulo-sec {
+                      font-size: 1.8em;
+                  }
+                  .titulo-sub {
+                      width: 100%;
+                  }
+                  .imagem-pqcomeco img {
+                      width: 85%;
+                  }
+                  .novidades {
+                      height: 38vh;
+                  }
+                  .slide-novidade img {
+                      width: 100%;
+                      height: 100%;
+                  }
+                  .navegation {
+                      top: 35vh;
+                  }
+                  .bar {
+                      width: 30px;
+                      height: 30px;
+                  }
+                  .conteudos-pqcomecoHo {
+                      font-size: 1em;
+                  }
+                  .product-cardp {
+                      grid-template-columns: repeat(2, 1fr);
+                  }
+                  .conteudo-pqcomeco {
+                      display: table-cell;
+                  }
+              }
+              
+              @media (min-width: 500px)and (max-width:900px) {
+                  .novidades {
+                      height: 37vh;
+                  }
+                  .navegation {
+                      top: 341px;
+                  }
+                  .bar {
+                      width: 25px;
+                      height: 25px;
+                  }
+              }
+              
+              @media (max-width: 374px) {
+                  .product-pic {
+                      height: 13vh;
+                  }
+                  .product-pic img {
+                      height: 13vh;
+                  }
+                  .product-pic-milkshake,
+                  .product-pic-cha {
+                      height: 13vh;
+                  }
+                  #adicionar {
+                      padding-bottom: 14px;
+                  }
+                  .adicionar {
+                      font-size: 0.7em;
+                      height: 4vh;
+                  }
+                  #saiba-mais {
+                      font-size: 0.5em;
+                      height: 3vh;
+                  }
+                  .product-price {
+                      font-size: 1em;
+                  }
+                  .navegation {
+                      top: 162px;
+                  }
+              }
+              
+              @media (min-width: 1030px)and (max-width:1920px) {
+                  #footer-responsivo {
+                      display: none;
+                  }
+                  #navbar {
+                      display: none;
+                  }
+                  nav {
+                      display: none;
+                  }
+                  .navegation {
+                      bottom: 0px;
+                  }
+                  .novi-banner {
+                      margin-left: 22%;
+                  }
+              }
+              
+              @media (max-width: 1024px) and (max-height:1366px) {
+                  #footer-normal {
+                      display: none;
+                  }
+              }

@@ -79,10 +79,6 @@
             border-radius: 10px;
             padding: 5px 0;
         }
-        
-        .nav-logout {
-            padding-right: 20px
-        }
         /* .conteudos {
     position: absolute;
     top: 82%;
@@ -92,6 +88,54 @@
         
         .sobre-nos img {
             width: 100%;
+        }
+        
+        #navbar {
+            position: absolute;
+            top: 2%;
+            left: 87%
+        }
+        
+        #navbar .fa-bars {
+            font-size: 27px;
+            color: #ffff;
+            background: rgba(40, 17, 10, 0.79);
+        }
+        
+        nav {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: rgba(40, 17, 10, 0.87);
+            border-radius: 10px;
+            top: 0;
+            z-index: 500;
+        }
+        
+        #fechar {
+            font-size: 2em;
+            color: #ffff;
+            float: right;
+            cursor: pointer;
+            margin-right: 5%;
+        }
+        
+        nav ul {
+            width: 100%;
+            float: left;
+            text-align: center;
+        }
+        
+        nav li {
+            padding: 24px;
+        }
+        
+        nav li a {
+            font-size: 2em;
+            color: #ffff;
+            padding: 1.5%;
+            text-decoration: none;
+            font-family: Montserrat;
         }
         /* 
 conteudo principal  */
@@ -847,326 +891,6 @@ conteudo principal  */
             height: 48px;
             cursor: pointer;
         }
-        /* cadastro */
-        
-        .container {
-            display: flex;
-            /* border: 2px solid red; */
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #ecf0f1;
-        }
-        
-        .content {
-            background-color: #fff;
-            border-radius: 15px;
-            width: 100%;
-            height: 100%;
-            /* display: flex; nao precisa pq ja tem no pai */
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-        }
-        
-        .content::before {
-            content: "";
-            position: absolute;
-            background-color: #180F01;
-            width: 40%;
-            height: 100%;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-            left: 0;
-        }
-        
-        .title {
-            font-size: 28px;
-            font-weight: bold;
-            text-transform: capitalize;
-        }
-        
-        .title-primary {
-            color: #fff;
-        }
-        
-        .title-second {
-            color: #180F01;
-        }
-        
-        .description {
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 30px;
-        }
-        
-        .description-primary {
-            color: #fff;
-        }
-        
-        .description-second {
-            color: #7fBcBd;
-        }
-        
-        .btn {
-            border-radius: 15px;
-            text-transform: uppercase;
-            color: #fff;
-            font-size: 10px;
-            font-weight: bold;
-            padding: 10px 50px;
-            cursor: pointer;
-            width: 150px;
-            align-self: center;
-            border: none;
-            margin-top: 1em;
-        }
-        
-        .btn-primary {
-            background-color: transparent;
-            border: 1px solid #fff;
-            transition: background-color 0.5s;
-        }
-        
-        .btn-second {
-            background-color: #180F01;
-            border: 1px solid #180F01;
-            transition: background-color 0.5s;
-        }
-        
-        .btn-primary:hover {
-            background-color: #fff;
-            color: #180F01;
-        }
-        
-        .btn-second:hover {
-            background-color: #fff;
-            color: #180F01;
-        }
-        
-        .first-content {
-            display: flex;
-        }
-        
-        .first-content .second-column {
-            z-index: 11;
-        }
-        
-        .first-column {
-            text-align: center;
-            width: 40%;
-            z-index: 10;
-        }
-        
-        .second-column {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .social-media {
-            margin: 1rem 0;
-        }
-        
-        .link-social-media {
-            color: #95a5a6;
-        }
-        
-        .link-social-media .item-social-media {
-            transition: background-color 0.5s;
-        }
-        
-        .link-social-media :hover.item-social-media {
-            background-color: #180F01;
-            color: #fff;
-            border-color: #180F01;
-        }
-        
-        .list-social-media {
-            display: flex;
-            list-style-type: none;
-        }
-        
-        .item-social-media {
-            border: 1px solid #bdc3c7;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            line-height: 35px;
-            text-align: center;
-            /* color: #95a5a6; */
-        }
-        
-        .link-social-media:not(:first-child) {
-            margin-left: 10px;
-        }
-        
-        .form {
-            display: flex;
-            flex-direction: column;
-            width: 55%;
-        }
-        
-        .form input {
-            height: 45px;
-            width: 100%;
-            border: none;
-            background-color: #ecf0f1;
-        }
-        
-        .label-input {
-            background-color: #ecf0f1;
-            display: flex;
-            align-items: center;
-            margin: 8px;
-        }
-        
-        .icon-modify {
-            color: #7f8c8d;
-            padding: 0 5px;
-        }
-        
-        .second-content {
-            position: absolute;
-            display: flex;
-        }
-        
-        .second-content .first-column {
-            order: 2;
-            z-index: -1;
-        }
-        
-        .second-content .second-column {
-            order: 1;
-            z-index: -1;
-        }
-        
-        .password {
-            color: #34495e;
-            font-size: 14px;
-            margin: 15px 0;
-            text-align: center;
-        }
-        
-        .password::first-letter {
-            text-transform: capitalize;
-        }
-        
-        .sign-in-js .first-content .first-column {
-            z-index: -1;
-        }
-        
-        .sign-in-js .second-content .second-column {
-            z-index: 11;
-        }
-        
-        .sign-in-js .second-content .first-column {
-            z-index: 13;
-        }
-        
-        .sign-in-js .content::before {
-            left: 60%;
-            border-top-left-radius: 0px;
-            border-bottom-left-radius: 0px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            animation: slidein 3s;
-            z-index: 12;
-        }
-        
-        .sign-up-js .content::before {
-            animation: slideout 3s;
-            z-index: 12;
-        }
-        
-        .sign-up-js .second-content .first-column,
-        .sign-up-js .second-content .second-column {
-            z-index: -1;
-        }
-        
-        .sign-up-js .first-content .second-column {
-            z-index: 11;
-        }
-        
-        .sign-up-js .first-content .first-column {
-            z-index: 13;
-        }
-        
-        .sign-in-js .first-content .second-column {
-            z-index: -1;
-            position: relative;
-            animation: deslocamento 3s;
-        }
-        /* animacao css */
-        
-        @keyframes deslocamento {
-            from {
-                left: 0;
-                opacity: 1;
-                z-index: 12;
-            }
-            25% {
-                left: -80px;
-                opacity: .5;
-            }
-            50% {
-                left: -100px;
-                opacity: .2;
-            }
-            to {
-                left: -110px;
-                opacity: 0;
-                z-index: -1;
-            }
-        }
-        /* animacao css*/
-        
-        @keyframes slidein {
-            from {
-                left: 0;
-                width: 40%;
-            }
-            25% {
-                left: 5%;
-                width: 50%;
-            }
-            50% {
-                left: 25%;
-                width: 60%;
-            }
-            75% {
-                left: 45%;
-                width: 50%;
-            }
-            to {
-                left: 60%;
-                width: 40%;
-            }
-        }
-        
-        @keyframes slideout {
-            from {
-                left: 60%;
-                width: 40%;
-            }
-            25% {
-                left: 45%;
-                width: 50%;
-            }
-            50% {
-                left: 25%;
-                width: 60%;
-            }
-            75% {
-                left: 5%;
-                width: 50%;
-            }
-            to {
-                left: 0;
-                width: 40%;
-            }
-        }
         /* cardapio */
         
         .cardapio img {
@@ -1770,4 +1494,110 @@ bebidas */
         
         .novi-img {
             margin-left: 8%;
+        }
+        
+        #footer-responsivo {
+            background: rgba(26, 9, 4, 0.96);
+        }
+        
+        #footer-responsivo #responsivo-menus {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #footer-responsivo #responsivo-menus span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+            border-bottom: 1px solid #fff;
+            margin-top: 30px;
+        }
+        
+        #footer-responsivo #responsivo-menus a {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 40px 0;
+        }
+        
+        #footer-responsivo #responsivo-termos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #footer-responsivo #responsivo-termos a {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #BB8D6F;
+            text-decoration: none;
+            padding: 23px 0;
+        }
+        
+        #footer-responsivo #responsivo-contatos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #footer-responsivo #responsivo-contatos span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 29px;
+            color: #753D19;
+            padding: 14px 0;
+        }
+        
+        #footer-responsivo #responsivo-redes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #footer-responsivo #responsivo-redes i {
+            color: #753D19;
+            font-size: 34px;
+            padding: 0 15px 50px;
+        }
+        
+        #footer-responsivo #responsivo-criador {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #footer-responsivo #responsivo-criador span:first-child {
+            font-family: Marguerite;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 36px;
+            color: #FFFFFF;
+            text-transform: none;
+        }
+        
+        #footer-responsivo #responsivo-criador span:last-child {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
         }

@@ -281,3 +281,101 @@
     font-size: 22px;
     margin-right: 20px;
 }
+
+@media (max-width: 900px) {
+    #backmenu {
+        height: 141px;
+    }
+    #backmenu .imglogo {
+        width: 50px;
+        height: 50px;
+    }
+    #backmenu .logocliente {
+        margin-left: 26px;
+        top: 75%;
+    }
+    .imglogo h2 {
+        font-size: 33px;
+    }
+    #backmenu h1 {
+        font-size: 18px;
+        top: 0;
+    }
+    #menus-options {
+        display: table-cell;
+        padding: 0;
+        border-right: none;
+    }
+    #menus-options span {
+        font-size: 16px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #perfil,
+    #pedidos,
+    #card,
+    #endereco {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 150px;
+        height: 200px;
+    }
+    #menus-options .fa-user,
+    #menus-options .fa-credit-card,
+    #menus-options .fa-map-marked-alt,
+    #menus-options .fa-shopping-bag {
+        font-size: 75px;
+    }
+    #perfil,
+    #pedidos,
+    #card,
+    #endereco {
+        margin: 70px 0px 0px 107px;
+    }
+    span {
+        font-size: 14px;
+    }
+    #menu-pai {
+        display: inline-block;
+    }
+    #list {
+        padding: 21px;
+    }
+    #list h1 {
+        font-size: 24px;
+    }
+    .detalhes {
+        margin-left: 55px;
+    }
+    .corpo {
+        width: 346px;
+        height: 134px;
+    }
+    .conteudo .fa-map-marked-alt {
+        font-size: 61px;
+    }
+    .endereco-det {
+        padding: 0;
+        margin: 0;
+    }
+    .local,
+    .cep-num {
+        display: flex;
+        flex-direction: column;
+    }
+    .estado {
+        padding: 15px 0;
+    }
+    .num {
+        margin-top: 15px;
+    }
+    .novo {
+        width: 346px;
+        height: 100px;
+    }
+}

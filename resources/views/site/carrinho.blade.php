@@ -20,9 +20,9 @@
                     @forelse ($pedidos as $pedido)
                     <div class="produto">
                         <div class="pi"><h4>PRODUTO</h4></div>
-                        <div class="p"><h4>QTDE</h4></div>
-                        <div class="p"><h4>PREÇO</h4></div>
-                        <div class="p"><h4>TOTAL</h4></div>
+                        <div class="qtd"><h4>QTDE</h4></div>
+                        <div class="pre"><h4>PREÇO</h4></div>
+                        <div class="to"><h4>TOTAL</h4></div>
                     </div>
                 </div>
                 <div class="borda"></div>
@@ -56,11 +56,11 @@
             <div id="itens-total">
                 <div id="total">
                     <h1>TOTAL</h1>
+                    <div id="borda1"></div>
                     <div class="valor-itens">
                         <h4>ITENS PEDIDO</h4>
                         <h3>R${{ number_format($total_pedido, 2, ',', '.') }} </h3>
                     </div>
-                    <div id="borda1"></div>
                 </div>
                 <button id="add"><a href="{{url('cardapio')}}">ADICIONAR PRODUTOS</a></button>
                 <form method="POST" action="{{ route('carrinho.concluir') }}">
@@ -69,7 +69,7 @@
                     <button id="ava" type="submit">Concluir</button>
                 </form>
                 @empty
-                      <h5>Não há nenhum pedido no carrinho</h5>
+                      <span class="nenhum">Não há nenhum pedido no carrinho</span>
                   @endforelse
             </div>
         </div>

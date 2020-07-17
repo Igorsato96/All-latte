@@ -78,7 +78,9 @@
     grid-template-columns: 50% 10% 20% 20%;
 }
 
-.produto .p {
+.produto .qtd,
+.produto .pre,
+.produto .to {
     justify-content: center;
     display: flex;
 }
@@ -177,7 +179,7 @@
 
 #borda1 {
     width: 90%;
-    margin: 14px 28px 0 19px;
+    margin: 14px 28px 30px 19px;
     border-bottom: 2px solid #000000;
 }
 
@@ -257,4 +259,73 @@ span.preco-total {
 
 .pi {
     margin-left: 31px;
+}
+
+.nenhum {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: black;
+    margin-left: 26px;
+}
+
+@media (max-width: 900px) {
+    #backmenu .imglogo {
+        width: 120px;
+        height: 109px;
+    }
+    #backmenu .logocliente {
+        margin-left: 39px;
+    }
+    #backmenu .fa-shopping-bag {
+        font-size: 40px;
+    }
+    #backmenu h1 {
+        font-size: 18px;
+    }
+    #itens-pedidos {
+        width: 351px;
+        margin: 75px 0px 31px 13px;
+    }
+    #itens-pedidos h1 {
+        font-size: 21px;
+        margin: 35px 0 39px 26px;
+    }
+    .nenhum {
+        font-size: 16px;
+    }
+    .prds img {
+        display: none;
+    }
+    #todos-conteudos {
+        display: block;
+    }
+    #total {
+        width: 351px;
+        margin: 0 0 37px 13px;
+    }
+    #ava,
+    #add {
+        font-weight: 500;
+        font-size: 22px;
+        width: 325px;
+        height: 94px;
+        margin: 0 53px 45px 22px;
+    }
+    .preco-total,
+    .produto .to {
+        display: none;
+    }
+    #det-itens .produto {
+        display: grid;
+        grid-template-columns: 50% 26% 20%;
+    }
+    .prds .nome {
+        margin-left: 29px;
+    }
+    .prd {
+        grid-template-columns: 50% 27% 21%;
+    }
 }

@@ -1,119 +1,177 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400');
-.background {
-    background: linear-gradient(180deg, #362922 18.23%, #442A1D 53.65%, rgba(118, 79, 49, 0.96) 99.48%);
-    width: 100%;
-}
-
-#backmenu {
-    background: #1A0904;
-    width: 100%;
-    height: 240px;
-}
-
-#backmenu .logocliente {
-    display: flex;
-    position: relative;
-    top: 51%;
-    margin-left: 126px;
-}
-
-#backmenu .imglogo {
-    width: 214px;
-    height: 206px;
-    background: #28110A;
-    border: 5px solid #FFFFFF;
-    border-radius: 50%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.imglogo h2 {
-    color: #FFFFFF;
-    font-size: 80px;
-    font-family: Montserrat;
-}
-
-#backmenu h1 {
-    position: relative;
-    top: 42px;
-    margin-left: 21px;
-    color: #FFFFFF;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 37px;
-    font-family: Montserrat;
-    text-transform: uppercase;
-}
-
-#menus-options {
-    display: flex;
-}
-
-#perfil,
-#pedidos,
-#card,
-#endereco {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 305px;
-    height: 442px;
-    background: transparent;
-    border: 3px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-#perfil {
-    margin: 189px 63px 128px 60px;
-}
-
-#pedidos,
-#card {
-    margin: 189px 70px 128px 0px;
-}
-
-#endereco {
-    margin: 189px 58px 128px 0px;
-}
-
-#perfil:hover,
-#pedidos:hover,
-#card:hover,
-#endereco:hover {
-    background: rgba(26, 9, 4, 0.78);
-}
-
-.fa-user,
-.fa-credit-card,
-.fa-map-marked-alt {
-    font-size: 200px;
-    color: #FFFFFF;
-}
-
-#menus-options .fa-shopping-bag {
-    font-size: 200px;
-    color: #FFFFFF;
-}
-
-span {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-    color: #FFFFFF;
-    padding-top: 39px;
-    text-transform: uppercase;
-}
-
-#menus-options a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400');
+    .background {
+        background: linear-gradient(180deg, #362922 18.23%, #442A1D 53.65%, rgba(118, 79, 49, 0.96) 99.48%);
+        width: 100%;
+    }
+    
+    #backmenu {
+        background: #1A0904;
+        width: 100%;
+        height: 240px;
+    }
+    
+    #backmenu .logocliente {
+        display: flex;
+        position: relative;
+        top: 51%;
+        margin-left: 126px;
+    }
+    
+    #backmenu .imglogo {
+        width: 214px;
+        height: 206px;
+        background: #28110A;
+        border: 5px solid #FFFFFF;
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imglogo h2 {
+        color: #FFFFFF;
+        font-size: 80px;
+        font-family: Montserrat;
+    }
+    
+    #backmenu h1 {
+        position: relative;
+        top: 42px;
+        margin-left: 21px;
+        color: #FFFFFF;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 37px;
+        font-family: Montserrat;
+        text-transform: uppercase;
+    }
+    
+    #menus-options {
+        display: flex;
+    }
+    
+    #perfil,
+    #pedidos,
+    #card,
+    #endereco {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 305px;
+        height: 442px;
+        background: transparent;
+        border: 3px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    #perfil {
+        margin: 189px 63px 128px 60px;
+    }
+    
+    #pedidos,
+    #card {
+        margin: 189px 70px 128px 0px;
+    }
+    
+    #endereco {
+        margin: 189px 58px 128px 0px;
+    }
+    
+    #perfil:hover,
+    #pedidos:hover,
+    #card:hover,
+    #endereco:hover {
+        background: rgba(26, 9, 4, 0.78);
+    }
+    
+    .fa-user,
+    .fa-credit-card,
+    .fa-map-marked-alt {
+        font-size: 200px;
+        color: #FFFFFF;
+    }
+    
+    #menus-options .fa-shopping-bag {
+        font-size: 200px;
+        color: #FFFFFF;
+    }
+    
+    span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding-top: 39px;
+        text-transform: uppercase;
+    }
+    
+    #menus-options a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    @media (max-width: 900px) {
+        #backmenu .imglogo {
+            width: 50px;
+            height: 50px;
+        }
+        .imglogo h2 {
+            font-size: 33px;
+        }
+        #backmenu h1 {
+            margin-left: 9px;
+            color: #FFFFFF;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 37px;
+            font-family: Montserrat;
+            text-transform: uppercase;
+            align-items: center;
+            display: flex;
+        }
+        #menus-options {
+            display: table-cell;
+        }
+        #perfil,
+        #pedidos,
+        #card,
+        #endereco {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 150px;
+            height: 200px;
+        }
+        #menus-options .fa-user,
+        #menus-options .fa-credit-card,
+        #menus-options .fa-map-marked-alt,
+        #menus-options .fa-shopping-bag {
+            font-size: 75px;
+        }
+        #perfil,
+        #pedidos,
+        #card,
+        #endereco {
+            margin: 70px 0px 70px 107px;
+        }
+        span {
+            font-size: 14px;
+        }
+    }
+    
+    @media (max-width: 1920px) and (min-width: 1024px) {
+        #menus-options {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
