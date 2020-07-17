@@ -50,6 +50,7 @@
 #todos-conteudos {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 #itens-pedidos {
@@ -312,7 +313,7 @@ span.preco-total {
         font-size: 22px;
         width: 325px;
         height: 94px;
-        margin: 0 53px 45px 22px;
+        margin: 0 12px 45px 22px;
     }
     .preco-total,
     .produto .to {

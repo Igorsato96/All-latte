@@ -311,6 +311,9 @@
                   .video-card .video-content a {
                       font-size: 14px;
                   }
+                  footer .chevron {
+                      width: 20%;
+                  }
               }
               
               @media (min-width: 900px)and (max-width:1025px) {

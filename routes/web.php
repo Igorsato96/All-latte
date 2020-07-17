@@ -92,3 +92,4 @@ Route::get('painelprodutos', 'AdminController@ProdutoView')->name('painelproduto
 
 Route::resource('add-produtos', 'AdminController')->middleware('checkAdmin');
 
+Route::post('painelpedidos/cancelar', 'AdminController@cancelar')->name('admin.cancelar')->middleware('checkAdmin');

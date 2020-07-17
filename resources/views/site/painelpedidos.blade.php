@@ -65,7 +65,12 @@
                             <span>R${{ number_format($total_pedido, 2, ',', '.') }}</span>
                                 <span>{{$pedido->status}}</span>
                                 <span>{{$pedido->created_at}}</span>
-                                <i class="far fa-times-circle"></i>
+
+                                <form method="POST" action="{{ route('admin.cancelar') }}">
+                                    {{csrf_field()}}
+                                <input type="hidden" name="pedido_id" value="{{$pedido->id}}">
+                                <button type="submit"><i class="far fa-times-circle"></i></button>
+                                </form>
                             </div>
                             @endforeach
                     </div>

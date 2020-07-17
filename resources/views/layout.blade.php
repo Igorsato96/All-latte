@@ -91,7 +91,7 @@
                 </div>
                 <div class="ul-menu">
                     <ul class="menus-home">
-                        <a href="./"><li class="menu-home">Home</li></a>
+                        <a href="{{url('')}}"><li class="menu-home">Home</li></a>
                         <a href="{{url('cardapio')}}"><li class="menu-home">Cardapio</li></a>
                         <a href="{{url('novidades')}}"><li class="menu-home">Novidades</li></a>
                         <a href="{{url('receitas')}}"><li class="menu-home">Receitas</li></a>
@@ -132,10 +132,10 @@
         <div id="footer-responsivo">
             <div id="responsivo-menus">
                 <span>MENU</span>
-                <a href="">HOME</a>
-                <a href="">CARDAPIO</a>
-                <a href="">NOVIDADES</a>
-                <a href="">RECEITAS</a>
+                <a href="{{url('')}}">HOME</a>
+                <a href="{{url('cardapio')}}">CARDAPIO</a>
+                <a href="{{url('novidades')}}">NOVIDADES</a>
+                <a href="{{url('receitas')}}">RECEITAS</a>
             </div>
             <div id="responsivo-termos">
                 <a href="">TERMOS E CONDIÇÕES</a>

@@ -19,10 +19,10 @@ Aqui temos dois sabores de chás populares do codidiano japones, o chá com folh
             </div>
             <div class="novi-banner">
                 <div class="novi-img">
-                    <a href="./bebidas.php"><img src="./assets/img/novidades/sakura.png"></a>
-                   <a href="./sobremesas.php"><img src="./assets/img/novidades/cake.png"></a>
-                    <a href="./sobremesas.php"><img src="./assets/img/novidades/mochi.png"></a>
-                   <a href="./bebidas.php"><img src="./assets/img/novidades/matcha.png"></a>
+                    <a href="{{url('cardapio')}}"><img src="./assets/img/novidades/sakura.png"></a>
+                   <a href="{{url('cardapio')}}"><img src="./assets/img/novidades/cake.png"></a>
+                    <a href="{{url('cardapio')}}"><img src="./assets/img/novidades/mochi.png"></a>
+                   <a href="{{url('cardapio')}}"><img src="./assets/img/novidades/matcha.png"></a>
                 </div>
             </div>
 @endsection

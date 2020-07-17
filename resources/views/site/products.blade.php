@@ -18,14 +18,7 @@
         @endforeach  
             <div class="qtd-produtos">
                 <div class="quantidade">{{$total}} produtos</div>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Ordenar por<div class="droplogo"><i class="fas fa-chevron-down"></i></div></button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
+              
             </div>
             <section>
                 <div class="product-cardp">

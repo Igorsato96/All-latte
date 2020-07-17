@@ -29,7 +29,6 @@ class StoreUpdateProdutosRequest extends FormRequest
             'qty' => 'required',
             'description' => 'required',
             'id_category' => 'required',
-            'image' => 'required',
         ];
     }
 
@@ -41,7 +40,7 @@ class StoreUpdateProdutosRequest extends FormRequest
             'qty.required' => 'Quantidade é obrigatório', 
             'description.required' => 'Descrição é obrigatório', 
             'id_category.required' => 'Categoria é obrigatório', 
-            'image.required' => 'Foto é obrigatório', 
+           
         ];
     }
 }

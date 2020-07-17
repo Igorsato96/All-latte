@@ -21,6 +21,7 @@ class CreatePedidoProdutosTable extends Migration
             $table->decimal('prices', 6, 2)->default(0);
             $table->foreign('pedidos_id')->references('id')->on('pedidos')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('produto_id')->references('id')->on('produtos')->onDelete('cascade')->onUpdate('cascade');
+            
             $table->timestamps();
         });
     }

@@ -160,7 +160,7 @@ class AdminController extends Controller
 
     public function AdminPedidos()
     {
-        $pedidos = Pedidos::where('status','PA')->get();
+        $pedidos = Pedidos::all();
 
         $pedidohoje = Pedidos::whereDate('created_at','>=',now())->get();
         $totalpedidoshoje = count($pedidohoje);
@@ -174,5 +174,24 @@ class AdminController extends Controller
         $produtosmes = PedidoProdutos::whereDate('created_at', '>=',now()->subDays(30))->get();
         $totalprodutosmes = count($produtosmes);
         return view('.site/painelpedidos',compact('pedidos','totalpedidoshoje','totalpedidosmes','totalprodutoshoje','totalprodutosmes'));
+    }
+
+
+    public function cancelar()
+    {
+        $this->middleware('VerifyCsrfToken');
+
+        $req = Request();
+        $idpedido       = $req->input('pedido_id');
+        $idspedido_prod = $req->input('id');
+       
+        Pedidos::where([
+            'id' => $idpedido
+        ])->update([
+            'status' => 'CA'
+        ]);
+        
+
+        return redirect()->route('painelpedidos');
     }
 }
